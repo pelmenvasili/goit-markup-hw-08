@@ -1,0 +1,43 @@
+.filter-button {
+  font: inherit;
+  cursor: pointer;
+  font-weight: $second-font-weight;
+  line-height: 1.62;
+  transition-property: background-color, color;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  background-color: $accent-color-bcg;
+  white-space: nowrap;
+  letter-spacing: $main-letter-spacing;
+  margin-bottom: 0px;
+  padding: 6px 22px;
+  border-radius: $button-border-radius;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $accent-color-text;
+    cursor: pointer;
+    color: $add-color-text;
+    box-shadow: $button-active_box-shadow;
+  }
+  &--all {
+    padding: 6px 25px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.filter-buttons {
+  &__item {
+    margin-right: 8px;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}

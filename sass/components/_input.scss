@@ -1,0 +1,22 @@
+.input {
+  &:not(.agreement__input) {
+    border: $border $textarea-border-color;
+    border-radius: $button-border-radius;
+    width: 448px;
+    margin: 0 auto;
+    transition-property: border;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+    display: block;
+    margin-bottom: 10px;
+    padding: 11px 0;
+    text-indent: 42px;
+  }
+  &:hover,
+  &:focus {
+    border-color: $accent-color-text;
+  }
+  &:focus {
+    outline: $accent-color-text;
+  }
+}

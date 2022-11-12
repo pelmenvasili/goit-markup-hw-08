@@ -1,0 +1,45 @@
+.benefits {
+  &__name {
+    font-weight: $main-font-weight;
+    font-size: $second-font-size;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-size: $second-font-size;
+    line-height: 1.71;
+    color: $second-color-text;
+    width: 270px;
+    letter-spacing: $main-letter-spacing;
+  }
+  &__title {
+    font-weight: $main-font-weight;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: $main-letter-spacing;
+    margin-bottom: 50px;
+    &--visually-hidden {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+    }
+  }
+  &__logo {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $accent-color-bcg;
+    margin-bottom: 30px;
+    border-radius: $button-border-radius;
+  }
+}

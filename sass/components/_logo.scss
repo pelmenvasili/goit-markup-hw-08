@@ -1,0 +1,19 @@
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  color: $studio-accent;
+  font-weight: $main-font-weight;
+  line-height: 1.19;
+  display: inline-block;
+  width: 145px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  letter-spacing: $main-letter-spacing;
+  &__text {
+    color: $accent-color-text;
+    &--part-reverse {
+      color: $add-color-text;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.social-media {
+  &__link {
+    width: 44px;
+    height: 44px;
+    fill: $main-color-social;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $add-color-text;
+    border-radius: $social-media_border-radius;
+    transition-property: fill, background-color;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+    margin-right: 10px;
+    &:hover,
+    &:focus {
+      background-color: $accent-color-text;
+      fill: $add-color-text;
+      border-radius: $social-media_border-radius;
+      overflow: visible;
+    }
+    &--footer {
+      background-color: $social-media-bcg;
+      border-radius: $social-media_border-radius;
+      fill: $add-color-text;
+      overflow: visible;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__list {
+    width: 206px;
+    margin: 0 auto;
+  }
+  &__item {
+    margin-right: 10px;
+    transition-property: fill, background-color;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__icon {
+    margin-right: 0;
+  }
+}

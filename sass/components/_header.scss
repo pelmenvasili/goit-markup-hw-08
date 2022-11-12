@@ -1,0 +1,10 @@
+.header {
+  margin: 0 auto;
+  border-bottom: $border $header-border-bottom-color;
+  &-container {
+    display: flex;
+    padding-bottom: 0px;
+    display: flex;
+    padding: 0px 15px;
+  }
+}

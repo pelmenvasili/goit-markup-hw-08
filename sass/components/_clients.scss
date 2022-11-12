@@ -1,0 +1,35 @@
+.clients {
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border-radius: $button-border-radius;
+    border: $border $main-color-social;
+    fill: $main-color-social;
+    transition-property: fill, border-color;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+    &:hover,
+    &:focus {
+      border-color: $accent-color-text;
+      fill: $accent-color-text;
+    }
+  }
+  &__item {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }}
+&__icon {
+  width: 106px;
+  height: 60px;
+}
+&__title {margin-bottom: 50px;
+  text-align: center;
+  font-weight: $main-font-weight;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: $main-letter-spacing;}
+}

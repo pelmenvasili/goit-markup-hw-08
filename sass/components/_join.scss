@@ -1,0 +1,13 @@
+.join {
+  flex-direction: row;
+  margin-right: 93px;
+  &__title {
+    font-weight: $main-font-weight;
+    font-size: $second-font-size;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: $main-letter-spacing;
+    margin-bottom: 20px;
+    color: $add-color-text;
+  }
+}

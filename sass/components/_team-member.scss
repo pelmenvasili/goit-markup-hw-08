@@ -1,0 +1,33 @@
+.team-member {
+  &__speciality {
+    color: $second-color-text;
+    line-height: 1.19;
+    white-space: nowrap;
+    margin-bottom: 16px;
+    font-size: 16px;
+    letter-spacing: $main-letter-spacing;
+    text-align: center;
+  }
+  &__card {
+    background-color: $add-color-text;
+    box-shadow: $card-box-shadow;
+    border-radius: $card-border-radius;
+    width: 270px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  &__name {
+    font-weight: $second-font-weight;
+    font-size: 16px;
+    line-height: 1.19;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    letter-spacing: $main-letter-spacing;
+    text-align: center;
+  }
+  &__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

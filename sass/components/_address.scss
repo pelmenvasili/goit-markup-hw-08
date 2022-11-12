@@ -1,0 +1,35 @@
+.address {
+  &__list {
+    font-size: $second-font-size;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: $main-letter-spacing;
+    flex-direction: column;
+  }
+  &__link {
+    color: $address-accent;
+    transition-property: color;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+    display: inline-block;
+    margin-bottom: 9px;
+    white-space: nowrap;
+    &--phone {
+      margin-bottom: 0px;
+      &:hover, &:focus {
+        color: $accent-color-text;
+      }
+    }
+    &--white {
+      color: $add-color-text;
+    }
+    &--mail {
+      &:hover, &:focus {
+        color: $accent-color-text;
+      }
+    }
+  }
+  &__item {
+    margin-right: 0;
+  }
+}

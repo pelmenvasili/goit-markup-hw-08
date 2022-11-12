@@ -1,0 +1,72 @@
+.agreement {
+  width: 423px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  &__label {
+    color: $second-color-text;
+    text-align: center;
+    position: relative;
+    padding-left: 23px;
+    margin-bottom: 30px;
+    font-size: $second-font-size;
+    line-height: 1.71;
+    letter-spacing: $main-letter-spacing;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3.5px;
+      left: 0;
+      width: 16px;
+      height: 15px;
+      border: 2px solid $main-color-text;
+      border-radius: $second-border-radius;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background-image: url(../images/icon-check.svg);
+      opacity: 0;
+      background-size: contain;
+      background-color: $accent-color-text;
+      border-radius: $second-border-radius;
+      .agreement__input:checked + & {
+      opacity: 1;
+    }
+    }
+  }
+  &__link {
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
+    color: $accent-color-text;
+    overflow: visible;
+    font-size: $second-font-size;
+    line-height: 1.71;
+    letter-spacing: $main-letter-spacing;
+  }
+  &__input {
+    display: inline-block;
+    margin: 0;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    color: $main-color-text;
+    &--visually-hidden {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+    }
+  }
+}

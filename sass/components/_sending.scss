@@ -1,0 +1,41 @@
+.sending {
+  &__form {
+    display: flex;
+  }
+  &__input {
+    line-height: 1.25;
+    letter-spacing: $main-letter-spacing;
+    color: $email-color;
+    border: $border $email-border-color;
+    filter: drop-shadow($button-box-shadow);
+    border-radius: $button-border-radius;
+    background-color: transparent;
+    width: 358px;
+    padding: 15px 0;
+    padding-left: 16px;
+    margin-bottom: 0;
+    text-indent: 0%;
+    &:hover,
+    &:focus {
+      border-color: $accent-color-text;
+    }
+    &:focus {
+      outline: $accent-color-text;
+    }
+  }
+  &__text {
+    display: inline-block;
+    font-weight: $main-font-weight;
+    font-size: $second-font-size;
+    line-height: 1.14;
+    letter-spacing: $main-letter-spacing;
+    text-transform: uppercase;
+    color: $add-color-text;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  &__label {
+    display: inline-block;
+    width: 358px;
+  }
+}

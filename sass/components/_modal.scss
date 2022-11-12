@@ -1,0 +1,40 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 528px;
+  min-height: 581px;
+  background-color: $add-color-text;
+  box-shadow: $card-box-shadow;
+  border-radius: $button-border-radius;
+  transform: scale(1) translate(-50%, -50%);
+  transition-property: transform;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  .is-hidden & {
+    transform: scale(0.9) translate(-50%, -50%);
+  }
+  &__close-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: $border $button-cross_border-color;
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border-radius: $social-media_border-radius;
+    cursor: pointer;
+    background-color: $add-color-text;
+  }
+  &__cross-icon {
+    transition-property: fill;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+    .modal__close-button:hover &, .modal__close-button:focus & {
+      fill: $accent-color-text;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.footer {
+  background-color: $second-color-bcg;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__logo {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  &__container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  &__address {
+    margin-right: 70px;
+  }
+}

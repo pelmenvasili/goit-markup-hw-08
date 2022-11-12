@@ -1,0 +1,37 @@
+.sending-button {
+  background-color: $accent-color-text;
+  padding: 10px 0;
+  margin: 0 auto;
+  border-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $button-box-shadow;
+  border-radius: $button-border-radius;
+  cursor: pointer;
+  width: 200px;
+  gap: 10px;
+  height: 50px;
+  border-width: 0;
+  transform: translatey(78%);
+  margin-left: 12px;
+  transition-property: background-color;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  &:hover,
+  &:focus {
+    background-color: $accent-hero-button;
+    &:hover {
+      background-color: $accent-hero-button;
+    }
+  }
+&__icon {
+  fill: $add-color-text;
+}
+&__text {
+  display: block;
+  font-weight: $main-font-weight;
+  line-height: 1.88;
+  letter-spacing: $second-letter-spacing;
+  color: $add-color-text;
+}}

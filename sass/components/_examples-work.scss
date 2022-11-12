@@ -1,0 +1,38 @@
+.examples-work {
+  padding-top: 0;
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: $main-font-weight;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: $main-letter-spacing;
+  }
+  &__item {
+    position: relative;
+  }
+  &__thumb {
+    position: absolute;
+    height: 70px;
+    width: 370px;
+    background-color: $thumb-work-bcg;
+    display: inline-block;
+    bottom: 0;
+  }
+  &__description {
+    text-transform: uppercase;
+    position: absolute;
+    font-weight: $main-font-weight;
+    line-height: 1.14;
+    font-size: $second-font-size;
+    color: $add-color-text;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    letter-spacing: $main-letter-spacing;
+    padding: 27px 0;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
