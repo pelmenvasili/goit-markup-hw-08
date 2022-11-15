@@ -10,14 +10,15 @@
   border-radius: $button-border-radius;
   cursor: pointer;
   width: 200px;
-  gap: 10px;
   height: 50px;
   border-width: 0;
+  @media screen and (min-width: 1200px) {
   transform: translatey(78%);
   margin-left: 12px;
   transition-property: background-color;
   transition-duration: $duration;
   transition-timing-function: $timing-function;
+  }
   &:hover,
   &:focus {
     background-color: $accent-hero-button;
@@ -34,4 +35,7 @@
   line-height: 1.88;
   letter-spacing: $second-letter-spacing;
   color: $add-color-text;
+  // @media screen and (max-width: 767px) {
+      margin-right: 12px;
+    // }
 }}

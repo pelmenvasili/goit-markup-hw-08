@@ -41,10 +41,17 @@
             </li>
           </ul>
         </nav>
+        <div class="menu">
+<button class="menu__button">
+<svg width="40" height="40" class="menu__icon">
+  <use href="./images/icons.svg#icon-menu"></use>
+</svg>
+</button>
+        </div>
         <div class="contacts">
           <ul class="contacts__list">
             <li class="contacts__item contacts__item--mail">
-              <a href="mailto:info@devstudio.com" class="contacts__link">
+              <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--mail">
                 <svg width="16" height="12" class="contacts__icon contacts__icon--envelope">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
@@ -52,7 +59,7 @@
               >
             </li>
             <li class="contacts__item contacts__item--phone">
-              <a href="tel:+380961111111" class="contacts__link">
+              <a href="tel:+380961111111" class="contacts__link contacts__link--phone">
                 <svg width="10" height="16" class="contacts__icon contacts__icon--phone">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
@@ -176,13 +183,13 @@
           <ul class="team-member__list">
             <li class= "team-member__card">
               <img
+              srcset="./images/igor.jpg 270w, ./images/igor-270@2x.jpg 270w, ./images/igor-354.jpg 354w, ./images/igor-354@2x.jpg 354w, ./images/igor-450.jpg 450w, ./images/igor-450@2x.jpg 450w"
                 src="./images/igor.jpg"
                 alt="Ігор Дем'яненко - дизайнер продукту"
-                width="270"
-                height="260"
                 class="team-member__image"
+                sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 100vw"
              >
-              <div class="team-member__container container">
+              <div class="team-member__container">
                 <h3 class="team-member__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-member__speciality">Product Designer</p>
                 <div class="social-media">
@@ -233,13 +240,13 @@
             </li>
             <li class="team-member__card">
               <img
+              srcset="./images/olga.jpg 270w, ./images/olga-270@2x.jpg 270w, ./images/olga-354.jpg 354w, ./images/olga-354@2x.jpg 354w, ./images/olga-450.jpg 450w, ./images/olga-450@2x.jpg 450w"
                 src="./images/olga.jpg"
                 alt="Ольга Рєпіна - фронтенд-розробник"
-                width="270"
-                height="260"
                 class="team-member__image"
+                sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 100vw"
              >
-              <div class="team-member__container container">
+              <div class="team-member__container">
                 <h3 class="team-member__name">Ольга Рєпіна</h3>
                 <p lang="en" class="team-member__speciality">
                   Frontend Developer
@@ -292,13 +299,13 @@
             </li>
             <li class="team-member__card">
               <img
+              srcset="./images/mykola.jpg 270w, ./images/mykola-270@2x.jpg 270w, ./images/mykola-354.jpg 354w, ./images/mykola-354@2x.jpg 354w, ./images/mykola-450.jpg 450w, ./images/mykola-450@2x.jpg 450w"
                 src="./images/mykola.jpg"
                 alt="Микола Тарасов - маркетолог"
-                width="270"
-                height="260"
                 class="team-member__image"
+                sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 100vw"
              >
-              <div class="team-member__container container">
+              <div class="team-member__container">
                 <h3 class="team-member__name">Микола Тарасов</h3>
                 <p lang="en" class="team-member__speciality">Marketing</p>
                 <div class="social-media">
@@ -349,13 +356,13 @@
             </li>
             <li class="team-member__card">
               <img
+              srcset="./images/mykhailo.jpg 270w, ./images/mykhailo-270@2x.jpg 270w, ./images/mykhailo-354.jpg 354w, ./images/mykhailo-354@2x.jpg 354w, ./images/mykhailo-450.jpg 450w, ./images/mykhailo-450@2x.jpg 450w"
                 src="./images/mykhailo.jpg"
                 alt="Михайло Єрмаков - дизайнер інтерфейсу користувача"
-                width="270"
-                height="260"
                 class="team-member__image"
+                sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 100vw"
              >
-              <div class="team-member__container container">
+              <div class="team-member__container">
                 <h3 class="team-member__name">Михайло Єрмаков</h3>
                 <p lang="en" class="team-member__speciality">UI Designer</p>
                 <div class="social-media">
@@ -461,6 +468,7 @@
     <footer class="footer page-footer">
       <div class="footer__container">
         <div class="footer__address">
+          <div class="footer__wrapper">
           <a href="./index.html" lang="en" class="logo footer__logo"
             ><span class="logo__text logo__text--accent">Web</span
             ><span class="logo__text logo__text--part-reverse">Studio</span></a
@@ -542,18 +550,17 @@
             </li>
           </ul>
         </div>
+      </div>
         </div>
         <div class="sending">
           <form class="sending__form">
             <label for="email" class="sending__label"
-              ><span class="sending__text">Підпишіться на розсилку</span>
-              <input
+              ><span class="sending__text">Підпишіться на розсилку</span><input
                 type="email"
                 name="email"
                 placeholder="E-mail"
                 class="sending__input"
-                id="email"
-           ></label>
+                id="email"></label>
             <button type="submit" class="sending-button">
               <span class="sending-button__text">Підписатися</span>
               <svg width="24" height="24" class="sending-button__icon">
@@ -570,9 +577,10 @@
               </svg>
             </button>
             <form class="contact-form">
+              <div class="contact-form__container">
               <h2 class="contact-form__title">Залиште свої дані, ми вам передзвонимо</h2>
               <label for="name" class="contact-form__label">Ім'я </label>
-              <div class="contact-form__container container">
+              <div class="contact-form__container">
                 <input type="text" id="name" name="name" class="contact-form__input input">
                 <div class="contact-form__logo">
                   <svg width="18" height="18" class="contact-form__icon">
@@ -581,7 +589,7 @@
                 </div>
               </div>
               <label for="tel" class="contact-form__label">Телефон</label>
-              <div class="contact-form__container container">
+              <div class="contact-form__container">
                 <input type="tel" id="tel" name="tel" class="contact-form__input input">
                 <div class="contact-form__logo">
                   <svg width="18" height="18" class="contact-form__icon">
@@ -590,7 +598,7 @@
                 </div>
               </div>
               <label for="mail" class="contact-form__label">Пошта</label>
-              <div class="contact-form__container container">
+              <div class="contact-form__container">
                 <input type="email" id="mail" name="mail" class="contact-form__input input">
                 <div class="contact-form__logo">
                   <svg width="18" height="18" class="contact-form__icon">
@@ -621,11 +629,13 @@
               <button type="submit" class="agreement-button">
                 <span>Відправити</span>
               </button>
+            </div>
             </form>
           </div>
         </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

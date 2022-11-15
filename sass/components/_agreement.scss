@@ -1,5 +1,6 @@
 .agreement {
-  width: 423px;
+  // width: 423px;
+  @media screen and (max-width: 767px) {width: 370px;}
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +14,7 @@
     font-size: $second-font-size;
     line-height: 1.71;
     letter-spacing: $main-letter-spacing;
+    @media screen and (max-width: 767px) {font-size: 12px;}
     &::before {
       content: "";
       position: absolute;
@@ -48,6 +50,7 @@
     font-size: $second-font-size;
     line-height: 1.71;
     letter-spacing: $main-letter-spacing;
+    @media screen and (max-width: 767px) {font-size: 12px;}
   }
   &__input {
     display: inline-block;

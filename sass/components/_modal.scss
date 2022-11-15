@@ -2,8 +2,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  overflow-y: hidden;
+  @media screen and (min-width: 1200px) {width: 528px;
+  height: 581px;}
+  @media screen and (max-width: 767px) {
+  width: 450px;
+  }
   background-color: $add-color-text;
   box-shadow: $card-box-shadow;
   border-radius: $button-border-radius;

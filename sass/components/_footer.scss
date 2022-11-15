@@ -3,23 +3,25 @@
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (max-width: 767px) {text-align: center;}
   &__logo {
-    padding-top: 0px;
-    padding-bottom: 0px;
     margin-top: 0px;
     margin-right: 0px;
+    @media screen and (max-width: 1199px) {margin-bottom: 20px;}
   }
   &__container {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
+    // display: flex;
+    // align-items: baseline;
+    // justify-content: space-between;
+    // width: 100%;
+    // max-width: 1200px;
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
   }
   &__address {
-    margin-right: 70px;
+    @media screen and (min-width: 768px) { display: inline-block; display: flex; justify-content: space-around; margin-bottom: 60px; text-align: center; align-items: baseline;}
+    @media screen and (min-width: 1200px) {margin-right: 70px; }
+    @media screen and (max-width: 767px) {margin-bottom: 60px;}
   }
 }

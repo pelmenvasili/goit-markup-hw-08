@@ -1,6 +1,8 @@
 .join {
   flex-direction: row;
-  margin-right: 93px;
+  @media screen and (min-width: 768px) {display: inline-block;}
+  @media screen and (min-width: 1200px) {margin-right: 93px;}
+  @media screen and (max-width: 767px) {margin-right: 0; margin-bottom: 60px;}
   &__title {
     font-weight: $main-font-weight;
     font-size: $second-font-size;

@@ -1,5 +1,8 @@
 .examples-work {
   padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   &__title {
     margin-bottom: 50px;
     text-align: center;
@@ -10,6 +13,7 @@
   }
   &__item {
     position: relative;
+    margin-right: 30px;
   }
   &__thumb {
     position: absolute;
@@ -33,6 +37,11 @@
     padding: 27px 0;
     &:last-child {
       margin-right: 0px;
+    }
+  }
+  &__list {
+    @media screen and (min-width: 1200px) {
+      display: flex;
     }
   }
 }

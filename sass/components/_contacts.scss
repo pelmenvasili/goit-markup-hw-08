@@ -1,12 +1,16 @@
 .contacts {
   margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+    @media screen and (max-width: 1199px) {padding: 21px 0px;}
   &__link {
     color: $second-color-text;
     fill: $second-color-text;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 161px;
+    // width: 161px;
     white-space: nowrap;
     font-weight: $second-font-weight;
     font-size: $second-font-size;
@@ -16,6 +20,14 @@
     transition-duration: $duration;
     transition-timing-function: $timing-function;
     padding: 32px 0px;
+    &--mail {
+      @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      padding: 0px;
+    }
     &:hover,
     &:focus,
     &:active {
@@ -25,7 +37,7 @@
     &:last-child {
       margin-right: 0px;
       width: 122px;
-      margin-left: auto;
+      justify-content: flex-start;
     }
     &:first-child {
       width: 161px;
@@ -39,7 +51,8 @@
     &:last-child {
       margin-right: 0;
     }
-    &--mail {
+    &--mail { 
+      @media screen and (min-width: 768px) {margin-right: 0;}
       margin-right: 30px;
     }
   }
@@ -62,5 +75,9 @@
   }
   &__list {
     display: flex;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
   }
 }

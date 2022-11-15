@@ -40,8 +40,12 @@
     font-size: 14px;
     margin-right: 50px;
     padding: 0;
+    &:last-child {margin-right: 0;}
   }
-  &__list {
+  &__list { display: flex;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
     .nav__item:last-child & {
       margin-right: 0;
     }

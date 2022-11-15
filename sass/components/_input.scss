@@ -2,7 +2,9 @@
   &:not(.agreement__input) {
     border: $border $textarea-border-color;
     border-radius: $button-border-radius;
+    @media screen and (min-width: 1200px) {
     width: 448px;
+    }
     margin: 0 auto;
     transition-property: border;
     transition-duration: $duration;

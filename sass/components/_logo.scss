@@ -6,10 +6,15 @@
   line-height: 1.19;
   display: inline-block;
   width: 145px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
   letter-spacing: $main-letter-spacing;
+  @media screen and (max-width: 767px) {
+    margin-right: 0; padding-top: 16px;
+      padding-bottom: 16px;
+  }
+    @media screen and (min-width: 768px) {margin-right: 88px; padding-top: 26px;
+      padding-bottom: 26px;}
+        @media screen and (min-width: 1200px) {margin-right: 93px; padding-top: 24px;
+          padding-bottom: 25px;}
   &__text {
     color: $accent-color-text;
     &--part-reverse {
@@ -17,3 +22,9 @@
     }
   }
 }
+.footer__logo {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
