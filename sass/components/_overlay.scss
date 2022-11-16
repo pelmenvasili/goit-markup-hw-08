@@ -3,6 +3,10 @@
     url(../images/hero-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   height: 600px;
   background-size: 1600px;
+  @media (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: $overlay-linear-gradient, url(/images/header-1200@2x.jpg);
+  }
 }

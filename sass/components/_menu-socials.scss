@@ -1,0 +1,16 @@
+.menu-socials {display: flex;
+  &__link {
+    font-weight: $second-font-weight;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $accent-color-text;}
+    &__item:not(:last-child) {
+      &::after {content: ''; width: 22px; height: 0;
+        margin-right: 10px;
+        margin-left: 10px;
+        border: $border $textarea-border-color; 
+        background-color: $textarea-border-color;
+        transform: rotate(90deg);}
+    }
+}

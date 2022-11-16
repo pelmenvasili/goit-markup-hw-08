@@ -1,6 +1,14 @@
-.menu { display: flex;
-  &__button {background-color: transparent; border-color: transparent; padding: 0;
+.menu {display: flex;
+  &__container {z-index: 999; position: fixed; top: 0; left: 0; width: 100vw; height: 820px; background-color: $add-color-text;
+  transform: translateX(110%);
+  transition: transform $duration $timing-function;
+  padding-left: 40px;
+&.is-open {transform: translateX(0);}}
+  &__button {background-color: transparent; border-color: transparent; padding: 0; cursor: pointer;
+    &__icon {padding: 11px;}
   @media screen and (min-width: 768px) {
     display: none;
   }}
 }
+.js-close-menu {margin-top: 21px; margin-right: 15px; display: block; margin-left: auto;
+&:hover, &:focus {color: $accent-color-text;}}

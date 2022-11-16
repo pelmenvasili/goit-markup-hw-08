@@ -1,0 +1,16 @@
+.mobile-menu {
+  margin-bottom: 302px;
+  &__list {display: flex;
+    flex-direction: column;}
+  &__link {
+    font-weight: $second-font-weight;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $main-color-text;
+    &:hover {color: $accent-color-text;}
+  &--studio {color: $accent-color-text;}}
+  &__item {display: inherit;
+    &--studio {margin-bottom: 36px;}
+&--portfolio {margin-bottom: 32px;}} 
+}
