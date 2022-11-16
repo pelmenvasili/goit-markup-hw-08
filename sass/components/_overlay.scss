@@ -1,12 +1,26 @@
 .overlay {
+  @media screen and (min-width: 1200px) {
   background-image: $overlay-linear-gradient,
     url(../images/hero-background.jpg);
+  }
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
-  height: 600px;
-  background-size: 1600px;
-  @media (min-resolution: 2dppx) and (min-width: 1200px) {
+  background-size: cover;
+  // height: 600px;
+  // background-size: 1600px;
+  @media screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     background-image: $overlay-linear-gradient, url(/images/header-1200@2x.jpg);
   }
+  @media screen and (max-width: 480px) {
+    background-image: $overlay-linear-gradient, url(/images/header-480.jpg);
+  }
+    @media screen and (min-resolution: 2dppx) and (max-width: 480px) {
+      background-image: $overlay-linear-gradient, url(/images/header-480@2x.jpg);
+    }
+        @media screen and (max-width: 768px) {
+          background-image: $overlay-linear-gradient, url(/images/header-768.jpg);
+        }
+                 @media screen and (min-resolution: 2dppx) and (max-width: 768px) {
+                   background-image: $overlay-linear-gradient, url(/images/header-768@2x.jpg);
+                 }
 }

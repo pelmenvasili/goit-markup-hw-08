@@ -14,7 +14,7 @@
     font-size: $second-font-size;
     line-height: 1.71;
     letter-spacing: $main-letter-spacing;
-    @media screen and (max-width: 767px) {font-size: 12px;}
+    @media screen and (max-width: 1199px) {font-size: 12px; line-height: 1.16;}
     &::before {
       content: "";
       position: absolute;

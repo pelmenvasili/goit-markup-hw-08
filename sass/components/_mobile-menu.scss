@@ -8,6 +8,7 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: $main-color-text;
+    cursor: pointer;
     &:hover {color: $accent-color-text;}
   &--studio {color: $accent-color-text;}}
   &__item {display: inherit;
