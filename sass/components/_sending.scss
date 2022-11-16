@@ -4,6 +4,9 @@
   }
   &__form {
     @media screen and (min-width: 768px) and (max-width: 1199px) {display: flex; flex-direction: column; margin: 0 auto; text-align: center;}
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
   &__input {
     line-height: 1.25;
