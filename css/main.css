@@ -1756,14 +1756,14 @@ img {
     width: 270px;
   }
 }
-@media screen and (max-width: 1199px) {
-  .team-member__card {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (max-width: 767px) {
   .team-member__card:last-child {
     margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .team-member__card {
+    margin-bottom: 30px;
   }
 }
 .team-member__name {
