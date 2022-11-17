@@ -1,6 +1,6 @@
 .menu {display: flex;
-  &__container {z-index: 999; position: fixed; top: 0; left: 0; width: 100vw; height: 820px; background-color: $add-color-text;
-  transform: translateX(110%);
+  &__container {z-index: 999; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: $add-color-text;
+  transform: translateX(150%);
   transition: transform $duration $timing-function;
   padding-left: 40px;
 &.is-open {transform: translateX(0);}}

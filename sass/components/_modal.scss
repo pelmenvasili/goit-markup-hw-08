@@ -5,11 +5,8 @@
   overflow-y: hidden;
   @media screen and (min-width: 1200px) {width: 528px;
   height: 581px;}
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
   width: 450px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 450px;
   }
   background-color: $add-color-text;
   box-shadow: $card-box-shadow;

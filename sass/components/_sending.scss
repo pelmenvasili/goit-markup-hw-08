@@ -16,8 +16,13 @@
     filter: drop-shadow($button-box-shadow);
     border-radius: $button-border-radius;
     background-color: transparent;
-    width: 358px;
-    @media screen and (max-width: 1199px) {width: 450px; margin-bottom: 20px;}
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
+    @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px) {width: 450px;}
     padding: 15px 0;
     padding-left: 16px;
     margin-bottom: 0;
@@ -40,10 +45,5 @@
     color: $add-color-text;
     margin-bottom: 20px;
     cursor: pointer;
-  }
-  &__label {
-    display: inline-block;
-    @media screen and (max-width: 1199px) {width: 450px;}
-    width: 358px;
   }
 }

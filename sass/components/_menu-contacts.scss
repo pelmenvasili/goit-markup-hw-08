@@ -1,5 +1,5 @@
 .menu-contacts {display: flex; flex-direction: column; margin-bottom: 64px;
-  &__item {display: inherit;}
+  &__item {display: inherit; white-space: nowrap;}
   &__link {
     font-weight: $second-font-weight;
     letter-spacing: 0.02em;

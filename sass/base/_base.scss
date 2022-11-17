@@ -3,6 +3,7 @@ body {
   color: $main-color-text;
   font-size: 16px;
   background-color: $add-color-text;
+  overflow-x: hidden;
 }
 a:active,
 a:focus {
@@ -30,7 +31,6 @@ img {
   height: auto;
   max-width: 100%;
 }
-// li {margin-right: 30px;}
 .is-hidden {opacity: 0;
   pointer-events: none;
   visibility: hidden;}
