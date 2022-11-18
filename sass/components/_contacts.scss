@@ -14,6 +14,9 @@
     white-space: nowrap;
     font-weight: $second-font-weight;
     font-size: $second-font-size;
+    @media screen and (max-width: 1199px) {
+      font-size: $third-font-size;
+    }
     letter-spacing: 0.02em;
     line-height: 1.14;
     transition-property: color, fill;

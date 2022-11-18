@@ -11,6 +11,9 @@
     transition-property: color;
     transition-duration: $duration;
     transition-timing-function: $timing-function;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: $main-letter-spacing;
     display: inline-block;
     margin-bottom: 9px;
     @media screen and (max-width: 1199px) {margin-bottom: 8px;}

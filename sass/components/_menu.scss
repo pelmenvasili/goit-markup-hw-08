@@ -1,8 +1,9 @@
 .menu {display: flex;
-  &__container {z-index: 999; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: $add-color-text;
+  &__container {z-index: 999; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: $add-color-text; display: flex; flex-direction: column; justify-content: space-between;
   transform: translateX(150%);
   transition: transform $duration $timing-function;
   padding-left: 40px;
+  padding-bottom: 48px;
 &.is-open {transform: translateX(0);}}
   &__button {background-color: transparent; border-color: transparent; padding: 0; cursor: pointer;
     &__icon {padding: 11px;}
