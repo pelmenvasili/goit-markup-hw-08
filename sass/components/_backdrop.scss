@@ -9,7 +9,4 @@
   transition-property: opacity;
   transition-duration: $duration;
   transition-timing-function: $timing-function;
-  @media screen and (max-width: 767px) {
-    max-width: 480px;
-  }
 }
