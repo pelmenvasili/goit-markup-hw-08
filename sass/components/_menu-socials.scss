@@ -1,7 +1,10 @@
 .menu-socials {display: flex;
   &__link {
     font-weight: $second-font-weight;
-    font-size: 18px;
+    font-size: 12px;
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+    }
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $accent-color-text;}

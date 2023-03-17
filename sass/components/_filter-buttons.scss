@@ -1,5 +1,8 @@
 .filter-button {
   font: inherit;
+  @media screen and (max-width: 479px) {
+    font-size: 13px;
+  }
   cursor: pointer;
   font-weight: $second-font-weight;
   line-height: 1.62;
@@ -24,20 +27,33 @@
     color: $add-color-text;
     box-shadow: $button-active_box-shadow;
   }
-  &--all {
-    padding: 6px 25px;
-  }
   &:last-child {
     margin-right: 0;
   }
 }
 .filter-buttons {
+    margin-bottom: 40px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+@media screen and (min-width: 1200px) {
+  margin-bottom: 50px;
+}
   &__item {
     margin-right: 8px;
   }
   &__list {
+    @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    }
+   
+  }
+  &__row {
+    display: flex;
+    flex-direction: row;
+    &--top {
+      margin-bottom: 15px;
+    }
   }
 }

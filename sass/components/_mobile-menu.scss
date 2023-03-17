@@ -3,14 +3,17 @@
     flex-direction: column;}
   &__link {
     font-weight: $second-font-weight;
-    font-size: 40px;
+    @media screen and (min-width: 480px) {
+     font-size: 30px; 
+    }
+    font-size: 25px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: $main-color-text;
     cursor: pointer;
     &:hover {color: $accent-color-text;}
-  &--studio {color: $accent-color-text;}}
+  &--current {color: $accent-color-text;}}
   &__item {display: inherit;
-    &--studio {margin-bottom: 36px;}
-&--portfolio {margin-bottom: 32px;}} 
+    &--studio {margin-bottom: 25px;}
+&--portfolio {margin-bottom: 25px;}} 
 }
